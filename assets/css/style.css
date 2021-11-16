@@ -2,8 +2,129 @@
 .container{
 	width: 380px;
 	margin: 0 auto;
+	font-size: 18px;
+}
+.headingText{
+	font-size: 10px;
+	text-align: center;
+}
+.subHeading{
+	color: #E5258C;
+}
+.TopColor{
+	height: 85px;
+	background-image: linear-gradient(to right, #E2268E , #833CD6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.TopImage{
+	
+	display: block;
+    height: 35px;
+	width: 125px;
+} 
+.subDiv{
+	padding: 20px 20px 30px;
+}
+.subDivHeading{
+	font-size: 28px;
+}
+.smallText{
+	font-size: 14px;
+}
+.btnCenter{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.button{
+	background-color: #404042; /* Gray */
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	border-radius:30px;
+	font-weight: bold;
 }
 
-.colorText{
-	text-color:  red;
+.myImg img{
+	height: 100%;
+	width: 100%;
+} 
+.listText{
+	padding-right: 15px;
 }
+.listText li a{
+	color: #E5258C ;
+}
+.MyStroageClass{
+	background-color: #f6f3f2;
+	padding-bottom: 30px;
+	color: #586065;
+}
+.SubStoage01{
+	padding:30px 25px 0;
+}
+.SubStoage02{
+	text-align: center;
+}
+
+.AppPhoto {
+	display: flex;
+}
+.AppStore img{
+	width: 95%;
+}
+.GooglePlay img{
+	width: 95%;
+}
+.dotClass{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dotted{
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	width: 90%;
+	
+}
+.SubStoage02 a{
+	color: #168BDB;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration:none;
+}
+.lowerList{
+   font-size: 12px;
+}
+.lowerList ul{
+    list-style-type: "※";
+}
+.lowerListText{
+	padding-top: 10px;
+}
+
+.SubStoage02Text{
+	padding-top: 10;
+}
+
+.footer{
+	padding-top: 10px;
+	display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer i {
+
+	color: #C4C4C4;
+	font-size: 30px;
+	
+}
+
