@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&amp;subset=japanese&amp;display=swap"
+		rel="stylesheet" type="text/css">
+	<title>HTML Email Tempalte with Table</title>
+	<style type="text/css">
+		* {
+			/* font-family: "Noto Sans", "Noto Sans JP", sans-serif !important; */
+			font-family: Noto Sans JP;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		table {
+			border-spacing: 0;
+		}
+
+		td {
+			padding: 0;
+		}
+
+		img {
+			border: 0;
+		}
+
+		@media screen and (max-width: 600px) {}
+
+		@media screen and (max-width: 400px) {}
+
+		.topBar {
+			background-color: #F6F3F2;
+			padding: 0 20px;
+		}
+
+		.billBackground {
+			background-color: #F6F3F2;
+			height: 454px;
+			width: 375px;
+		}
+
+		.billSection {
+			background: #FFFFFF;
+			border-radius: 24px;
+			margin: 0 auto;
+			align-items: center;
+			padding: 40px 24px;
+			text-align: center;
+			margin-bottom: 50px;
+
+		}
+
+		.successMessage {
+			text-align: center;
+		}
+
+		.itemAmount {}
+
+		.promotion1 {
+			padding: 0px 23px 0px 24px;
+		}
+
+		.promotion1Content {}
+
+		.emailBox {
+			padding: 24px 16px;
+			border: 2px solid #E5258C;
+			box-sizing: border-box;
+			border-radius: 16px;
+
+		}
+
+		.mobileBox {
+			padding: 24px 16px;
+			border: 1px solid #CFD4D8;
+			box-sizing: border-box;
+			border-radius: 16px;
+		}
+
+		.mobileBox {
+			padding: 24px 16px;
+			border: 1px solid #CFD4D8;
+			box-sizing: border-box;
+			border-radius: 16px;
+		}
+
+		.calendarBox {
+			padding: 24px 16px;
+			border: 1px solid #CFD4D8;
+			box-sizing: border-box;
+			border-radius: 16px;
+		}
+
+		.promotion2 {
+			padding: 0px 0px 20px;
+		}
+
+		.promotion1Content {
+			background: #FFFFFF;
+			margin: 16px 0px;
+			align-items: center;
+			padding: 0px 24px;
+			text-align: center;
+		}
+
+		.promotion2Content {
+			background: #FFFFFF;
+			align-items: center;
+			padding: 0px 24px;
+			text-align: center;
+		}
+
+		.promotion2SubContent {
+			margin: 16px 0px 0px;
+			padding: 0 16px;
+			align-items: center;
+			text-align: center;
+		}
+
+		.footer {
+			padding: 40px 31px 40px 32px;
+			background: #F6F3F2;
+			color: #1C1C1C;
+		}
+
+		.dotBox {
+			padding: 23px 0px 24px;
+		}
+
+		.dotted {
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+		}
+	</style>
+</head>
+
+<body>
+	<table cellpadding="0" cellspacing="0" width="100%" height="100%" border="0"
+		style="max-width: 375px; margin: 0 auto;">
+		<!-- Main table/Container -->
+		<tr>
+			<!-- Top Bar -->
+			<td style="width: 100%; margin: 0 auto;">
+				<table class="topBar" style="width: 100%; height: 100px;" cellpadding="0" cellspacing="0" border="0">
+					<!-- Top Bar Start -->
+					<tr class="">
+						<td>
+							<img src="./Email-Template-3/Logo.png" alt="Logo" width="81px" height="32px">
+						</td>
+						<td style="font-weight:400; font-size: 16px; text-align: right;" width="224px" height="48px">
+							<p style=" margin: 10px 0;">
+								ご利用確定のお知らせ </p>
+						</td>
+					</tr>
+
+					<!-- Top Bar End -->
+
+				</table>
+		</tr>
+		<tr class="billBackground">
+			<!-- Bill section -->
+			<td style="width: 100%; margin: 0 auto;">
+				<table class="billSection" style="width: 328px; height: 414px;" cellpadding="0" cellspacing="0"
+					border="0">
+					<tr>
+						<td>
+							<table class="successMessage">
+								<tr>
+									<td style=""> <img src="./Email-Template-3/a_icon_paymentreceived.png" alt="Icon"
+											width="56px" height="56px"></td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 24px; text-align: center;"
+										width="280px" height="40px">
+										<p>ご利用の確定</p>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<!-- Line -->
+
+					</tr>
+					<tr>
+						<!-- Item Amount -->
+						<td>
+							<table class="itemAmount">
+								<tr>
+									<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 16px; text-align: center;"
+										width="280px" height="24px">
+										<p style="margin: 8px 0;">2021年1月15日</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 40px; text-align: center;"
+										width="280px" height="48px">
+										<p style="margin: 8px 0;">7,000円</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 16px; text-align: center;"
+										width="280px" height="24px">
+										<p style="margin: 8px 0;">Amazon.co.jp</p>
+									</td>
+								</tr>
+
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align: center; padding-top: 40px;">
+							<a href="https://paidy.com/merchant/campaign/crossmerchantnovember2021?utm_source=hs_email&utm_medium=email&utm_content=177451497&_hsenc=p2ANqtz-8hGb1vYGx6RuLTv-evAAPI-Quw-2imOoSoXobvBq87oWh3HVtYJ6WpNzfHCoUDYOXItxd_OV-2U60xLz8B-f-VRhp_UQ"
+								style=" background-color: #404042; border-radius: 55px; box-sizing: border-box; color: #fff; display: inline-block; font-size: 20px; font-weight: 700; min-width: 200px; padding: 17px 26px; text-decoration: none; line-height: 30px;margin-bottom: 30px;">対象ショップを見る</a>
+						</td>
+					</tr>
+				</table>
+		</tr>
+		<tr class="promotion1">
+			<!-- Promotion1 -->
+			<td style="width: 100%; margin: 0 auto;">
+				<table class="promotion1Content" style="width: 100%; height: 100%;" cellpadding="0" cellspacing="0"
+					border="0">
+					<tr>
+						<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 24px;text-align: center;">
+							<p style="margin: 16px 0px;">お支払いまでの流れ</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="width: 100%; margin: 0 auto;">
+							<table>
+								<tr>
+									<td>
+										<table class="emailBox" style="width: 328px; height: 216px;" cellpadding="0"
+											cellspacing="0" border="0">
+											<!-- Email Box -->
+											<tr>
+												<td>
+													<img src="./Email-Template-3/email.png" alt="EmailIcon" width="48px"
+														height="48px">
+												</td>
+												<td
+													style="font-weight:bold; font-family: Noto Sans JP; font-size: 14px;text-align: center;">
+													<h2 style="padding: 10px 0;">ご利用の確定（本メール</h2>
+													<p style="padding: 10px 0;">お支払いまでの流れ</p>
+												</td>
+
+											</tr>
+											<tr>
+												<td>
+
+												</td>
+												<td
+													style="font-weight:bold; font-family: Noto Sans JP; font-size: 16px;text-align: center;">
+													<p>「すぐ払い」を利用して、コンビニで当月中に支払うこともできます。すぐ払いはこちら</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<!--Icon-->
+									<td style="font-family: Noto Sans JP; text-align: center;" width="312px">
+										<img src="./Email-Template-3/MyIcon.png" alt="Icon Image" width="32px"
+											height="32px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table class="mobileBox" style="width: 328px; height: 216px;" cellpadding="0"
+											cellspacing="0" border="0">
+											<!-- Email Box -->
+											<tr>
+												<td>
+													<img src="./Email-Template-3/mobile.png" alt="MobileBox"
+														width="48px" height="48px">
+												</td>
+												<td
+													style="font-weight:bold; font-family: Noto Sans JP; font-size: 16px;text-align: center;">
+													<h2 style="padding: 10px 0;">ご請求金額のご連絡</h2>
+													<p style="padding: 10px 0;">翌月1日から3日までの間に、ご請求金額をメールとSMSでお知らせ。</p>
+												</td>
+
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<!--Icon-->
+									<td style="font-family: Noto Sans JP; text-align: center;" width="312px">
+										<img src="./Email-Template-3/MyIcon.png" alt="Icon Image" width="32px"
+											height="32px">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table class="calendarBox" style="width: 328px; height: 216px;" cellpadding="0"
+											cellspacing="0" border="0">
+											<!-- Calendar Box -->
+											<tr>
+												<td>
+													<img src="./Email-Template-3/calender.png" alt="CalendarBox"
+														width="48px" height="48px">
+												</td>
+												<td
+													style="font-weight:bold; font-family: Noto Sans JP; font-size: 16px;text-align: center;">
+													<h2 style="padding: 10px 0;">ご請求金額のご連絡</h2>
+													<p style="padding: 10px 0;">翌月1日から3日までの間に、ご請求金額をメールとSMSでお知らせ。</p>
+												</td>
+
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; font-family: Noto Sans JP; font-size: 12px; color: #586065; text-align: center;"
+										width="280px" height="24px">
+										<p style="margin: 24px 0px;">※本メールに心当たりのない方はこちらからお問い合わせください</p>
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+		<tr class="promotion2">
+			<!-- Promotion2 -->
+			<td style="width: 100%; margin: 0 auto;">
+				<table class="promotion2Content" style="width: 100%; height: 100%;" cellpadding="0" cellspacing="0"
+					border="0">
+					<tr>
+						<td style="font-weight:bold; font-family: Noto Sans JP; font-size:24px; text-align: center; padding-bottom: 20px;"
+							width="328px" height="60px">
+							<p style="margin: 10px 0px;">分割手数料無料*の３回あと払いで、計画的にお買い物。</p>
+						</td>
+					</tr>
+					<tr>
+						<td style=""> <img src="./Email-Template-3/Image.png" alt="promotion2Image" width="100%"></td>
+					</tr>
+					<tr>
+						<td style="width: 100%; margin: 0 auto;">
+							<table class="promotion2SubContent" style="width: 100%; height: 104px;" cellpadding="0"
+								cellspacing="0" border="0">
+								<tr>
+									<td style="font-family: Noto Sans JP; font-size: 24px; text-align: left;"
+										width="280px" height="24px">
+										<p>ペイディアプリから、運転免許証もしくはマイナンバーカードで本人確認をして、ペイディプラスに無料アップグレードすると、分割手数料無料*の３回あと払いを利用可能。ちょっと手の届かなかったあのアイテムも、計画的に購入することができます。
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="font-family: Noto Sans JP; font-size: 11px;color:#586065; text-align: left; padding-top: 20px;"
+										width="328px" height="144px">
+										<p>*口座振替・銀行振込のみ無料</p>
+										<p style="margin:16px 0;">
+											※３回あと払いは1回のお買い物につき、Amazon.co.jpは3円以上、その他のオンラインショップでは3,000円以上のお支払いでお使いいただけます。一部のオンラインショップでは３回あと払いをご利用いただけません。
+										</p>
+										<p>※３回あと払いへの変更は当月中のみとなります。請求が確定する翌月1日以降は変更できません。</p>
+									</td>
+								</tr>
+								<tr>
+									<td style="text-align: center; padding-top: 40px;">
+										<a href="https://paidy.com/merchant/campaign/crossmerchantnovember2021?utm_source=hs_email&utm_medium=email&utm_content=177451497&_hsenc=p2ANqtz-8hGb1vYGx6RuLTv-evAAPI-Quw-2imOoSoXobvBq87oWh3HVtYJ6WpNzfHCoUDYOXItxd_OV-2U60xLz8B-f-VRhp_UQ"
+											style=" background-color: #404042; border-radius: 55px; box-sizing: border-box; color: #fff; display: inline-block; font-size: 20px; font-weight: 700; min-width: 200px; padding: 17px 26px; text-decoration: none; line-height: 30px;margin-bottom: 40px;">３回あと払いを使ってみる</a>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<!-- Footer -->
+			<td style="width: 100%; margin: 0 auto;">
+				<table class="footer" style="width: 100%; height: 100%;" cellpadding="0" cellspacing="0" border="0">
+					<tr>
+						<!-- Help Box -->
+						<td style="font-family: Noto Sans JP; font-size:13px; text-align: center;" width="328px"
+							height="60px">
+							<img src="./Email-Template-3/HelpIcon.png" alt="HelpIcon Photo" width="32px" height="32px">
+							<p>お困りの方はヘルプをご確認ください</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="dotBox">
+							<p class="dotted" style="color: #E6E1DC"></p>
+						</td>
+					</tr>
+					<tr>
+						<!-- Social Media Box -->
+						<td style="font-family: Noto Sans JP; font-size:13px; text-align: center;" width="312px"
+							height="56px">
+							<p>ペイディ公式Twitterはこちら</p>
+							<img src="./Email-Template-3/Twitter.png" alt="Twitter Photo" width="32px" height="32px">
+						</td>
+					</tr>
+					<tr>
+						<td class="dotBox">
+							<p class="dotted" style="color: #E6E1DC"></p>
+						</td>
+					</tr>
+					<tr>
+						<!--Disclaimer-->
+						<td style="font-family: Hiragino Sans; font-size:13px; text-align: center;" width="312px"
+							height="16px">
+							<p>※このメールはお知らせ専用のアドレスより配信しております。このメールに直接返信してのお問い合わせにはご対応いたしかねますのでご了承ください。</p>
+							<p style="padding-top: 10px"> &copy; Paidy Inc.</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
